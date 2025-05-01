@@ -72,10 +72,10 @@ async def account_login(bot, m):
         try:
             await bot.send_message(chat_id=channel_id, text=f'🎯**Target Batch - {b_name}**')
         except Exception as e:
-            await m.reply_text(f"**Please remake a admin in channel..**\n\n**Bot Made By** 🔰『{𝐓𝐡𝐞 𝐑𝐚𝐣 𝐁𝐡𝐚𝐢 }🔰")
+            await m.reply_text(f"**Please remake a admin in channel..**\n\n**Bot Made By** 🔰 『The Raj Bhai』 🔰")
             channel_id = m.chat.id
         await editable.delete()
         await masterdl.process_links(links, raw_text, raw_text2, token, b_name, MR, channel_id, bot, m, path, thumb, Credit)
     except Exception as e:
-        await m.reply_text(f"**⚠️Downloading Failed⚠️**\n\n**Fail Reason »** {e}\n\n**╰────⌈✨❤️ 『{𝐓𝐡𝐞 𝐑𝐚𝐣 𝐁𝐡𝐚𝐢 }』 ❤️✨**⌋────╯")
+        await m.reply_text(f"**⚠️Downloading Failed⚠️**\n\n**Fail Reason »** {e}\n\n**╰────⌈✨❤️ 『The Raj Bhai』 ❤️✨**⌋────╯")
         return
